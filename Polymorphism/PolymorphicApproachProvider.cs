@@ -17,7 +17,7 @@ namespace RLDatix.ConsoleInteractionSolution_1.Polymorphism
 
             foreach (var animal in animals)
             {
-                SongVerseHelper.PrintSongVerse(animal.Type, animal.Sound);
+                animal.Sing();
             }
         }
     }

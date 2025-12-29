@@ -1,15 +1,14 @@
-﻿using RLDatix.ConsoleInteractionSolution_1.Helpers;
-
-namespace RLDatix.ConsoleInteractionSolution_1.Polymorphism
+﻿namespace RLDatix.ConsoleInteractionSolution_1.Polymorphism
 {
     public abstract class Animal
     {
         public abstract string Type { get; }
+
         public abstract string Sound { get; }
 
-        public void Sing()
+        public virtual void Sing()
         {
-            SongVerseHelper.PrintSongVerse(Type, Sound);
+            Console.WriteLine("Old MacDonald Had a Farm");
         }
     }
 }
